@@ -1,0 +1,609 @@
+* {
+
+
+    margin: 0;
+    padding: 0;
+
+
+}
+
+body {
+
+    @include flex-klasik;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#e66465, #9198e5);
+    z-index: 1;
+
+
+}
+
+
+
+main {
+
+
+    overflow: hidden;
+
+}
+
+.hide {
+
+    display: none;
+
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+
+
+}
+
+// ENTER ------------------------------
+
+#enter {
+
+
+    @include button;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.058);
+
+
+
+}
+
+#enter:hover {
+
+    background: linear-gradient(rgba(255, 255, 255, 0.107), #9198e521);
+    transition: 0.3s;
+
+
+
+}
+
+// REGISTER FORM ---------------------
+
+#registerBody {
+
+    height: fit-content;
+}
+
+#forms {
+
+    @include flex-klasik;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    animation: animacija 0.5s forwards;
+    opacity: 0;
+    filter: blur(3px);
+
+
+}
+
+form {
+
+    @include flex-klasik;
+    flex-direction: column;
+    height: 100%;
+    animation: animacija 0.5s forwards;
+    opacity: 0;
+    filter: blur(3px);
+
+
+}
+
+#register {
+
+
+    @include flex-klasik;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background: linear-gradient(#e66465, #9198e5);
+    z-index: 3;
+    animation: animacija 0.5s forwards;
+    opacity: 0;
+    filter: blur(3px);
+
+}
+
+
+
+#login {
+
+
+
+    @include flex-klasik;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background: linear-gradient(#e66465, #9198e5);
+    z-index: 3;
+    animation: animacija 0.5s forwards;
+    opacity: 0;
+    filter: blur(3px);
+
+
+
+
+
+}
+
+label {
+
+
+    @include registerFonts;
+    font-weight: bold;
+    animation: animacija 0.5s forwards;
+    opacity: 0;
+    filter: blur(3px);
+
+
+}
+
+input {
+
+
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 200px;
+    height: 25px;
+    animation: animacija 0.5s forwards;
+    opacity: 0;
+    filter: blur(3px);
+
+
+}
+
+.submit {
+
+    width: 200px;
+    height: 40px;
+    @include registerFonts;
+    color: black;
+    font-weight: bolder;
+    animation: animacija 0.5s forwards;
+    opacity: 0;
+    filter: blur(3px);
+}
+
+#registerNaslov {
+
+
+    @include registerFonts;
+    font-size: 45px;
+    margin: 50px;
+    animation: animacija 0.5s forwards;
+    opacity: 0;
+    filter: blur(3px);
+
+}
+
+#loginNaslov {
+
+    @include registerFonts;
+    font-size: 45px;
+    margin: 50px 50px 70px 50px;
+    animation: animacija 0.5s forwards;
+    opacity: 0;
+    filter: blur(3px);
+
+
+
+}
+
+#naslovOR {
+
+
+    @include registerFonts;
+    font-size: 75px;
+    font-weight: bolder;
+    margin: 50px 50px 70px 50px;
+    animation: animacija 0.5s forwards;
+    opacity: 0;
+    filter: blur(3px);
+
+
+}
+
+
+
+// NAVBAR-------------------------------
+
+
+#navBar {
+
+    @include flex-klasik;
+
+}
+
+
+.navButton {
+
+    width: 200px;
+    height: 60px;
+    margin: 20px;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    @include flex-klasik;
+    text-align: center;
+    animation: animacija 0.5s forwards;
+    opacity: 0;
+    filter: blur(3px);
+
+}
+
+#yourLogo {
+
+
+
+    border: 2px solid white;
+
+
+}
+
+#joinUs {
+
+    border: 2px solid white;
+
+
+}
+
+
+.navButton:hover {
+
+
+
+    background: linear-gradient(rgba(255, 255, 255, 0.107), #9198e521);
+    transition: 2s;
+
+
+
+}
+
+// WELCOME WINDOW ----------------------------------
+
+
+
+#welcomeWindow {
+
+
+    @include flex-klasik;
+    flex-direction: row;
+    width: 100%;
+    height: 40vh;
+    min-height: 100vh;
+
+}
+
+span {
+
+
+    margin-top: 50px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 45px;
+    font-weight: bolder;
+    letter-spacing: 60px;
+    color: white;
+    margin-bottom: 300px;
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+
+
+}
+
+
+// SLIDESHOW --------------------------------------------
+
+
+#slideShow {
+
+
+    @include flex-klasik;
+    flex-direction: row;
+    margin: 10px;
+    min-height: 100vh;
+
+
+
+}
+
+
+.slikaSlide {
+
+
+    border: 5px solid rgba(255, 255, 255, 0.978);
+    border-radius: 20px;
+    margin: 5px;
+    width: 800px;
+    height: 500px;
+
+
+}
+
+.slika {
+
+
+    margin: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.602);
+    border-radius: 5px;
+
+
+
+}
+
+// next and previous
+
+#next {
+    width: 50px;
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+    float: left;
+    opacity: .5;
+    margin-left: 20px;
+    cursor: pointer;
+    color: white;
+    z-index: 9999;
+    margin: 100px;
+}
+
+#next:hover {
+
+
+
+    background: linear-gradient(rgba(255, 255, 255, 0.482), #9198e585);
+    transition: 0.3s;
+
+}
+
+
+
+#previous {
+
+    width: 50px;
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+    float: right;
+    opacity: .5;
+    margin-left: 20px;
+    cursor: pointer;
+    color: white;
+    z-index: 9999;
+    margin: 100px;
+
+}
+
+#previous:hover {
+
+    background: linear-gradient(rgba(255, 255, 255, 0.482), #9198e585);
+    transition: 0.3s;
+
+
+}
+
+
+// MAIN ---------------------------------
+
+#mainContainer {
+
+
+
+    width: 80%;
+    margin-top: 10px;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+
+
+.container {
+
+
+
+    @include flex-klasik;
+    flex-direction: row;
+    text-align: center;
+    border-top: solid 2px rgba(255, 255, 255, 0.463);
+    border-radius: 5px;
+
+
+
+}
+
+// Containers - MAIN
+
+#productNaslov {
+
+    margin-top: 50px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    letter-spacing: 20px;
+    color: white;
+
+
+}
+
+
+#productNaslovAnimacija {
+
+
+    opacity: 1;
+    transform: none;
+    transition: opacity 1.5s ease, transform 1.5s ease;
+
+
+}
+
+.animacija3 {
+
+    opacity: 1;
+    transform: scale(1.2);
+    transition: 1s;
+
+
+
+}
+
+#container1 {
+
+
+
+    @include flex-klasik;
+    @include kartica;
+    margin-top: 20px;
+
+
+}
+
+
+
+#container2 {
+
+
+
+    @include flex-klasik;
+    @include kartica;
+    margin-top: 20px;
+
+}
+
+
+
+#container3 {
+
+
+
+    @include flex-klasik;
+    @include kartica;
+    margin-top: 20px;
+
+}
+
+// -----------------------------------
+#container1:hover {
+
+
+    transform: scale(1.05);
+    transition: 0.3s;
+
+
+}
+
+#container2:hover {
+
+
+    transform: scale(1.05);
+    transition: 0.3s;
+
+
+}
+
+#container3:hover {
+
+
+    transform: scale(1.05);
+    transition: 0.3s;
+
+
+}
+
+// ALREADY HAVE ONE? -- ONE DIVISON 
+
+
+#alreadyNaslov {
+
+    @include flex-klasik;
+    flex-direction: column;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 20px;
+    color: white;
+    margin: 200px;
+}
+
+
+#loginButton {
+
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.036);
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-align: right;
+    margin: 100px;
+
+}
+
+// ----------------------------------------
+.footerStyle {
+
+
+    @include flex-klasik;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    box-shadow: 2px 0 0 0 black;
+
+
+
+
+}
+
+.footerContainer {
+
+
+    @include flex-klasik;
+    flex-direction: row;
+
+
+
+}
+
+#footerNaslov {
+
+
+    margin-top: 50px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    letter-spacing: 20px;
+    color: white;
+
+
+}
+
+.img {
+
+
+
+    margin: 80px;
+
+
+}

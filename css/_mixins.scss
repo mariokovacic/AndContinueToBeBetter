@@ -1,0 +1,65 @@
+@mixin flex-klasik {
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+
+
+
+@mixin kartica {
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 80vh;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    padding: 5px;
+
+
+}
+
+@mixin button {
+
+
+    width: 250px;
+    min-height: 10vh;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.036);
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-align: center;
+
+
+}
+
+@mixin registerFonts {
+
+
+
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bolder;
+
+
+
+
+}
