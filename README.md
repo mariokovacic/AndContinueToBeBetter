@@ -11,3 +11,6 @@ This is a small practice focused on some scroll animations which I find amazing.
       - and the slideshow I did, is based solely on my knowledge of JS, with time and a bit of internet it will be a lot better. 
       - every aspect of this page would be better if there was an actual goal to achieve, but without any goals, i'm satisfied with
       animations, simple design and interactivity.
+
+      - and I would build that webpage completely, but considering all of the other pages would just require from me to fulfill them with content which I dont have,
+      I just focused on samo JS, animations, interactivity and simplicity.
